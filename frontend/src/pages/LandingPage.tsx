@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
-import { QrCode, BookOpen, FileText, MessageSquare, DoorOpen, Wifi } from 'lucide-react';
-import Navbar from '../components/Navbar';
-import StatusBadge from '../components/StatusBadge';
-import LoadingSpinner from '../components/LoadingSpinner';
+import { QrCode, BookOpen, FileText, MessageSquare, DoorOpen, Wifi, Building2 } from 'lucide-react';
+import { Navbar } from '../components/Navbar';
+import { StatusBadge } from '../components/StatusBadge';
+import { LoadingSpinner } from '../components/LoadingSpinner';
 import { formatRupiah } from '../lib/formatCurrency';
 import apiClient from '../lib/apiClient';
 

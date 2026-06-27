@@ -84,3 +84,43 @@ body {
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
+
+.text-gradient {
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 50%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out both;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.6s ease-out both;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.3s ease-out both;
+}
+
+.animate-slideDown {
+  animation: slideDown 0.4s ease-out both;
+}

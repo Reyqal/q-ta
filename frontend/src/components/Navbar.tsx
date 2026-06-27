@@ -21,7 +21,7 @@ export function Navbar() {
           <div className="flex items-center gap-3">
             {isAuthenticated ? (
               <Link
-                to={isAdmin ? '/admin' : '/tenant'}
+                to={isAdmin ? '/admin/dashboard' : '/tenant/invoices'}
                 className="flex items-center gap-2 px-4 py-2 rounded-xl bg-primary/10 text-primary hover:bg-primary/20 transition-all font-medium text-sm"
               >
                 Dashboard
